@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="bar"></div>
+    <div class="bigwrap">
+        <div class="wrap">
+            <h1 id="title">Enter Unit No.</h1>
+            <div id="back">
+                <i class="fa-solid fa-rotate-left" id="btnback"></i>
+                <div>Return</div>
+            </div>
+        </div>
+        <div class="topic">
+            <span id="unit">Unit #</span>
+            <input type="text" id="result">
+        </div>
+            <div id="keyboard">
+                <div>
+                    <button onclick="addNumber(1)" class="btnkey">1</button>
+                    <button onclick="addNumber(2)" class="btnkey">2</button>
+                    <button onclick="addNumber(3)" class="btnkey">3</button>
+                </div>
+                <div>
+                    <button onclick="addNumber(4)" class="btnkey">4</button>
+                    <button onclick="addNumber(5)" class="btnkey">5</button>
+                    <button onclick="addNumber(6)" class="btnkey">6</button>
+                </div>
+                <div>
+                    <button onclick="addNumber(7)" class="btnkey">7</button>
+                    <button onclick="addNumber(8)" class="btnkey">8</button>
+                    <button onclick="addNumber(9)" class="btnkey">9</button>
+                </div>
+                <div>
+                    <button onclick="deleteNumber()" class="iconbtn btnkey"><i class="fa-solid fa-circle-xmark" style="color: #fd7979;"></i></button>
+                    <button onclick="addNumber(0)" class="btnkey">0</button>
+                    <button onclick="showPopup()" class="iconbtn btnkey"><i class="fa-solid fa-square-phone" style="color: #09f492;"></i></button>
+                </div>
+            </div>
+            <div id="popup"> 
+                <img src="https://cdn-icons-png.flaticon.com/512/1077/1077114.png" alt="user" id="image">
+                <div id="fail">
+                    <p class="exclamation"><i class="fa-solid fa-circle-exclamation" style="color:white;"></i></p>
+                    <p id="noresponse"></p>
+                    <p class="choice">would you like to call again or call the reception?</p>
+                    <div class="btnrow">
+                        <button onclick="callAgain()">Call Again</button>
+                        <button>Call Reception</button>
+                    </div>
+                </div>
+            </div>
+            <div class="wrapphone"><i class="fa-solid fa-phone" id="phone"></i></div>
+        </div>
+    <script src="https://kit.fontawesome.com/c54b7d85ab.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
